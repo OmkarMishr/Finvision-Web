@@ -4,7 +4,6 @@ import React from 'react';
 import Header from '@/components/sections/header';
 import Hero from '@/components/sections/hero';
 import ImageCarousel from '@/components/sections/image-carousel';
-import Welcome from '@/components/sections/welcome';
 import NewsFeature from '@/components/sections/news-feature';
 import MissionVisionGoals from '@/components/sections/mission-vision-goals';
 import Courses from '@/components/sections/courses';
@@ -22,7 +21,6 @@ import DailyMarketNews from '@/components/sections/daily-market-news';
 import { IntroVideo } from '@/components/intro-video';
 import MarketTicker from '@/components/sections/market-ticker';
 import StatsSection from '@/components/sections/stats-section';
-import LeaderboardPreview from '@/components/sections/leaderboard-preview';
 import GlobalReach from '@/components/sections/global-reach';
 import { motion } from 'framer-motion';
 
@@ -44,7 +42,6 @@ export default function Home() {
       <DisclaimerPopup />
       <LaunchPopup />
       
-      {/* High-end Ticker at the absolute top */}
       <MarketTicker />
       
       <Header />
@@ -57,10 +54,6 @@ export default function Home() {
         </Reveal>
 
         <Reveal>
-          <LeaderboardPreview />
-        </Reveal>
-
-        <Reveal>
           <DailyMarketNews />
         </Reveal>
 
@@ -70,10 +63,6 @@ export default function Home() {
 
         <Reveal>
           <ImageCarousel />
-        </Reveal>
-
-        <Reveal>
-          <Welcome />
         </Reveal>
 
         <Reveal>
