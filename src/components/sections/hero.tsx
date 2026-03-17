@@ -42,7 +42,7 @@ const BitcoinRain = () => {
             style={{ width: coin.size, height: coin.size }}
           >
             <img
-              src="https://cryptologos.cc/logos/bitcoin-btc-logo.png?v=025"
+              src="https://assets.coingecko.com/coins/images/1/thumb/bitcoin.png"
               alt="Bitcoin"
               className="w-full h-full object-contain filter drop-shadow-[0_0_5px_rgba(247,147,26,0.5)]"
             />

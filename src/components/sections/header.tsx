@@ -39,6 +39,7 @@ const navItems: NavItem[] = [
   { label: 'BLOG', href: '/blog' },
   { label: 'CONTACT', href: '#connect' },
   { label: 'CALCULATOR', href: '/calculator' },
+  { label: 'BROKER', href: '/nalmifx' },
 ];
 
 const Header = () => {

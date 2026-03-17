@@ -28,14 +28,6 @@ const courses = [
       isFree: true
     },
     {
-      icon: BookOpen,
-      title: 'BASIC COURSE',
-      price: '₹9,999',
-      originalPrice: '₹19,999',
-      discount: '50% OFF',
-      isFree: false
-    },
-    {
       icon: LineChart,
       title: 'ADVANCE COURSE',
       price: '₹14,999',
@@ -45,7 +37,7 @@ const courses = [
     },
     {
       icon: Zap,
-      title: 'COMBO (BASIC + ADVANCE)',
+      title: 'TRADING WITH TECHNICAL PsyCHOLOGY',
       price: '₹19,999',
       originalPrice: '₹39,999',
       discount: '50% OFF',
@@ -54,7 +46,7 @@ const courses = [
   ];
 
   // Marketing Bull Sound URL
-  const BULL_SOUND_URL = 'https://assets.mixkit.co/active_storage/sfx/2281/2281-preview.mp3';
+  const BULL_SOUND_URL = '';
 
 
 interface PurchaseFormData {
@@ -551,7 +543,7 @@ const Courses = () => {
         </div>
         
         <div className="container mx-auto px-4 relative z-10">
-          <div className="grid items-stretch grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
+          <div className="grid items-stretch grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
             {courses.map((course, index) => (
               <div key={index} className={`flex flex-col items-center text-center p-6 glass-card rounded-2xl hover-lift hover-glow transition-all duration-300 gradient-border relative overflow-hidden group ${course.title.includes('COMBO') ? 'border-accent/50' : ''}`}>
                 <div className="absolute -top-2 -right-2 z-20">

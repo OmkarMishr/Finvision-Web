@@ -53,9 +53,18 @@ const DailyMarketNews = () => {
   }, [fetchNews]);
 
   const handleExternalClick = () => {
-    const url = 'https://www.forexfactory.com/calendar';
+  const url = 'https://www.forexfactory.com/calendar';
+  const isInIframe = window.self !== window.top;
+  
+  if (isInIframe) {
+    // Inside iframe — send message to parent
     window.parent.postMessage({ type: "OPEN_EXTERNAL_URL", data: { url } }, "*");
-  };
+  } else {
+    // Normal browser — open directly
+    window.open(url, '_blank', 'noopener,noreferrer');
+  }
+};
+
 
   return (
     <section className="py-16 bg-background relative overflow-hidden section-dark">
