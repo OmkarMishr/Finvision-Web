@@ -116,7 +116,7 @@ export default function NalmifxPage() {
               BEST ASIAN
             </span>
             <br />
-            <span className="text-foreground">TRADER</span>
+            <span className="text-foreground">BROKER</span>
           </h1>
 
           <div className="flex items-center gap-3 mb-6">
@@ -129,7 +129,7 @@ export default function NalmifxPage() {
 
           <p className="text-foreground/60 text-lg md:text-xl max-w-2xl mb-10 leading-relaxed">
             Join millions of traders worldwide on <span className="text-primary font-bold">NALMI-FX</span> —
-            the most trusted trading platform in Asia. Start with a free account today.
+            the most trusted trading platform in Asia. Recommended by Finvision.
           </p>
 
           {/* Hero CTA Buttons */}
