@@ -39,7 +39,6 @@ export default function Home() {
     <div className="min-h-screen flex flex-col bg-background selection:bg-primary/30">
       <IntroVideo />
       <DisclaimerPopup />
-      <LaunchPopup />
     
       
       <Header />
@@ -59,9 +58,6 @@ export default function Home() {
           <ImageCarousel />
         </Reveal>
 
-        <Reveal>
-          <NewsFeature />
-        </Reveal>
 
         <Reveal>
           <MissionVisionGoals />

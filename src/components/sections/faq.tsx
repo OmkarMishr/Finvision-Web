@@ -17,7 +17,7 @@ interface FaqItem {
 const faqData: FaqItem[] = [
   {
     question: "What is the duration of the course?",
-    answer: "The Basic course duration is 2 weeks and the Advanced course duration is 4 weeks.",
+    answer: "The Basic course duration is 1 weeks and the Advanced course duration is 4 weeks.",
   },
   {
     question: "What will I learn in this course?",
@@ -29,12 +29,12 @@ const faqData: FaqItem[] = [
   },
   {
     question: "What if I miss the class?",
-    answer: "You'll be getting recordings access for lifetime with your registered email ID.",
+    answer: "You'll be getting recordings access with your registered email ID.",
   },
-  {
-    question: "Will I get lifetime mentorship in this course?",
-    answer: "Yes, you get lifetime support and mentorship from the finvision institute of training team.",
-  },
+  // {
+  //   question: "Will I get lifetime mentorship in this course?",
+  //   answer: "Yes, you get lifetime support and mentorship from the finvision institute of training team.",
+  // },
   {
     question: "Will I get a certificate after this course?",
     answer: "Yes, you will be given a certificate after the successful completion of the course.",

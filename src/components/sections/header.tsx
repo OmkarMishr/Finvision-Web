@@ -35,9 +35,9 @@ const courseLinks = [
 
 const navItems: NavItem[] = [
   { label: 'HOME', href: '/' },
-  { label: 'COURSE', href: '#courses' },
+  { label: 'COURSE', href: '/courses' },
   { label: 'BLOG', href: '/blog' },
-  { label: 'CONTACT', href: '#connect' },
+  { label: 'CONTACT', href: '/contact' },
   { label: 'CALCULATOR', href: '/calculator' },
   { label: 'BROKER', href: '/nalmifx' },
 ];
@@ -60,6 +60,25 @@ const Header = () => {
     };
   }, []);
 
+  useEffect(() => {
+    if (pathname === '/') {
+      const hash = window.location.hash.replace('#', '');
+      if (hash) {
+        // Small delay to ensure DOM is ready
+        const timer = setTimeout(() => {
+          const targetElement = document.getElementById(hash);
+          if (targetElement) {
+            const headerOffset = 100;
+            const elementPosition = targetElement.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+            window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
+          }
+        }, 300);
+        return () => clearTimeout(timer);
+      }
+    }
+  }, [pathname]);
+
   const handleCourseClick = (url: string) => {
     const isInIframe = window.self !== window.top;
     if (isInIframe) {
@@ -72,22 +91,32 @@ const Header = () => {
   };
 
   const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
-    if (href.startsWith('#')) {
-      e.preventDefault();
-      const targetId = href.substring(1);
-      const targetElement = document.getElementById(targetId);
-      if (targetElement) {
-        const headerOffset = 100;
-        const elementPosition = targetElement.getBoundingClientRect().top;
-        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-
-        window.scrollTo({
-          top: offsetPosition,
-          behavior: 'smooth'
-        });
+    // Handle full path with hash e.g. /#courses
+    if (href.includes('#')) {
+      const [path, hash] = href.split('#');
+      const isOnHomePage = pathname === '/' || pathname === '';
+  
+      if (isOnHomePage) {
+        // Already on homepage — smooth scroll directly
+        e.preventDefault();
+        const targetElement = document.getElementById(hash);
+        if (targetElement) {
+          const headerOffset = 100;
+          const elementPosition = targetElement.getBoundingClientRect().top;
+          const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+          window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
+          setIsMobileMenuOpen(false);
+        }
+      } else {
+        // On another page — let Next.js navigate to /#courses
+        // then scroll after page loads (handled by useEffect below)
         setIsMobileMenuOpen(false);
+        // Navigation happens naturally via the href
       }
+      return;
     }
+  
+    setIsMobileMenuOpen(false);
   };
 
   const renderNavLink = (item: NavItem, index: number) => {

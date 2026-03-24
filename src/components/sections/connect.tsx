@@ -44,7 +44,7 @@ const ConnectSection = () => {
               </div>
               <h3 className="font-heading text-[clamp(1.1rem,2vw,1.25rem)] font-semibold mb-2 text-foreground">Phone Number</h3>
               <p className="text-[clamp(0.85rem,1.2vw,0.95rem)] leading-relaxed">
-                <a href="tel:+919630065800" className="text-muted-foreground hover:text-primary transition-colors block">+91-9630065800</a>
+                <a href="tel:+918889199933" className="text-muted-foreground hover:text-primary transition-colors block">+91-8889199933</a>
                 <a href="tel:+918889199977" className="text-muted-foreground hover:text-primary transition-colors block">+91-8889199977</a>
                 <a href="tel:+918889199933" className="text-muted-foreground hover:text-primary transition-colors block">+91-8889199933</a>
               </p>

@@ -37,9 +37,8 @@ export default function ContactPage() {
                   <h2 className="text-xl font-bold text-foreground">Phone Numbers</h2>
                 </div>
                   <div className="space-y-1 text-muted-foreground">
-                    <p><a href="tel:+919630065800" className="hover:text-primary transition-colors">+91-9630065800</a></p>
-                    <p><a href="tel:+918889199977" className="hover:text-primary transition-colors">+91-8889199977</a></p>
                     <p><a href="tel:+918889199933" className="hover:text-primary transition-colors">+91-8889199933</a></p>
+                    <p><a href="tel:+918889199977" className="hover:text-primary transition-colors">+91-8889199977</a></p>
                   </div>
               </div>
 

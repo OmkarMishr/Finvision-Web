@@ -70,7 +70,7 @@ export default function PersonalityDevelopment() {
     
     const message = `Hello! I want to enroll in the Personality Development Program.\n\nName: ${formData.name}\nWhatsApp Number: ${formData.wpNumber}\nAddress: ${formData.address}\nPreferred Date of Joining: ${formData.dateOfJoining}`;
     
-    const whatsappUrl = `https://wa.me/919630065800?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/918889199933?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
     
     setIsDialogOpen(false);

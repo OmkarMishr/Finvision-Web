@@ -27,16 +27,16 @@ interface Service {
 const serviceData: Service[] = [
   { icon: Users, title: "Offline Classes", description: "Practical Live Trading Classes" },
   { icon: MonitorPlay, title: "Live classes", description: "1+ Hours of Personal Training." },
-  { icon: LifeBuoy, title: "Lifetime Free Mentor", description: "Our mentors stay with you beyond the course — guiding your trades, clearing doubts & ensuring consistent growth at no extra cost." },
+  // { icon: LifeBuoy, title: "Lifetime Free Mentor", description: "Our mentors stay with you beyond the course — guiding your trades, clearing doubts & ensuring consistent growth at no extra cost." },
   { icon: BarChart3, title: "Trading strategies", description: "With 85% + Accuracy" },
-  { icon: Phone, title: "Lifetime Free Assistance (Future Support)", description: "Post-course support for your future trading journey — strategy reviews, market guidance & doubt resolution, always free." },
+  // { icon: Phone, title: "Lifetime Free Assistance (Future Support)", description: "Post-course support for your future trading journey — strategy reviews, market guidance & doubt resolution, always free." },
   { icon: Layers, title: "Base Build-Up Classes", description: "Build strong market foundation." },
   { icon: Shield, title: "Risk Management", description: "Protect your investments." },
   { icon: Laptop, title: "100% Practical & Live Trading Classes", description: "Learn by doing, live trading." },
   { icon: Film, title: "Recorded Lectures", description: "Learn at your pace." },
-  { icon: School, title: "Classroom And Online Classes", description: "Learn flexibly, in-person or online." },
+  // { icon: School, title: "Classroom And Online Classes", description: "Learn flexibly, in-person or online." },
   { icon: Award, title: "Certification Course", description: "Prove your expertise." },
-  { icon: ClipboardList, title: "Mock Test And Study Material", description: "Practice and learn." },
+  // { icon: ClipboardList, title: "Mock Test And Study Material", description: "Practice and learn." },
   { icon: Brain, title: "Psychology Build-up classes", description: "Master your trading mind." },
 ];
 

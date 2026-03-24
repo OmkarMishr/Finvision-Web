@@ -14,11 +14,11 @@ const features = [
     title: "Base Build-Up Classes",
     description: "Build strong market foundation.",
   },
-  {
-    iconSrc: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/project-uploads/2bdd73bf-3e8f-43f2-83bc-63455ef55ee6/generated_images/flat-cartoon-style-icon-for-lifetime-sup-e021b2db-20251112175107.jpg",
-    title: "Lifetime Free Assistance (Future Support)",
-    description: "Post-course support for your future trading journey — always free.",
-  },
+  // {
+  //   iconSrc: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/project-uploads/2bdd73bf-3e8f-43f2-83bc-63455ef55ee6/generated_images/flat-cartoon-style-icon-for-lifetime-sup-e021b2db-20251112175107.jpg",
+  //   title: "Lifetime Free Assistance (Future Support)",
+  //   description: "Post-course support for your future trading journey — always free.",
+  // },
   {
     iconSrc: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/project-uploads/2bdd73bf-3e8f-43f2-83bc-63455ef55ee6/generated_images/flat-cartoon-style-icon-for-hybrid-learn-1a112851-20251112175108.jpg",
     title: "Classroom And Online Classes",
@@ -39,11 +39,11 @@ const features = [
     title: "Psychology Build-up classes",
     description: "Master your trading mind.",
   },
-  {
-    iconSrc: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/project-uploads/2bdd73bf-3e8f-43f2-83bc-63455ef55ee6/generated_images/flat-cartoon-style-icon-for-mock-test-an-558f33dd-20251112175108.jpg",
-    title: "Mock Test And Study Material",
-    description: "Practice and learn.",
-  },
+  // {
+  //   iconSrc: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/project-uploads/2bdd73bf-3e8f-43f2-83bc-63455ef55ee6/generated_images/flat-cartoon-style-icon-for-mock-test-an-558f33dd-20251112175108.jpg",
+  //   title: "Mock Test And Study Material",
+  //   description: "Practice and learn.",
+  // },
   {
     iconSrc: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/project-uploads/2bdd73bf-3e8f-43f2-83bc-63455ef55ee6/generated_images/flat-cartoon-style-icon-for-certificatio-b118e5e3-20251112175108.jpg",
     title: "Certification Course",

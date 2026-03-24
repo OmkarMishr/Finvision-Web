@@ -73,16 +73,16 @@ const Hero = () => {
     if (state.success && state.formData) {
       toast.success(state.message || 'Enquiry submitted successfully!');
       
-      const message = `*New Enquiry from FINVISION Website*
+      const message = `*New Enquiry from FINVISION Web*
 
-📝 *Full Name:* ${state.formData.name}
-📱 *Mobile:* +91 ${state.formData.mobile}
-📧 *Email:* ${state.formData.email}
+*Full Name:* ${state.formData.name}
+*Mobile:* +91 ${state.formData.mobile}
+*Email:* ${state.formData.email}
 
 _Submitted on: ${new Date().toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' })}_`;
 
       const encodedMessage = encodeURIComponent(message);
-      const whatsappNumber = '919630065800';
+      const whatsappNumber = '918889199933';
       const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
       
       setTimeout(() => {

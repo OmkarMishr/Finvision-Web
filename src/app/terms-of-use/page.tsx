@@ -91,7 +91,7 @@ export default function TermsOfUse() {
                   <p className="font-semibold text-primary text-lg">Finvision</p>
                   <p>Institute of Financial Training and Emerging Skills</p>
                   <p><strong>Address:</strong> Office 3024, Currency Tower, VIP Chowk, Raipur (C.G.)-492001</p>
-                  <p><strong>Phone:</strong> +91 9630065800 | +91 8889199977 | +91 8889199933</p>
+                  <p><strong>Phone:</strong> +91 8889199933 | +91 8889199977 | +91 8889199933</p>
                   <p><strong>Email:</strong> support@myfinvision.com</p>
                   <p><strong>Office Hours:</strong> Monday - Saturday: 10:00 AM - 6:00 PM | Sunday: Closed</p>
                 </div>
