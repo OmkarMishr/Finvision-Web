@@ -37,7 +37,7 @@ const courses = [
     },
     {
       icon: Zap,
-      title: 'TRADING WITH TECHNICAL PSYCHOLOGIES',
+      title: 'ADVANCE + LIVE MARKET SESSIONS',
       price: '₹19,999',
       originalPrice: '₹39,999',
       discount: '50% OFF',
