@@ -186,6 +186,7 @@ _Submitted on: ${new Date().toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' }
                   <Input
                     type="text"
                     name="name"
+                    onKeyDown={(e) => e.stopPropagation()}
                     placeholder="Enter Full Name*"
                     className="h-12 rounded-lg px-4 bg-foreground/5 border-border/50 text-foreground placeholder:text-muted-foreground focus:border-primary focus:ring-primary/20"
                     required
