@@ -6,9 +6,9 @@ const socialLinks = [
     {
       name: 'Instagram',
       Icon: Instagram,
-      handle: '@myfinvisionofficial',
+      handle: '@myfinvision.com_',
       hoverColor: 'group-hover:text-pink-500',
-      href: 'https://www.instagram.com/myfinvisioninstitute/',
+      href: 'https://www.instagram.com/myfinvision.com_',
     },
   {
     name: 'YouTube',
