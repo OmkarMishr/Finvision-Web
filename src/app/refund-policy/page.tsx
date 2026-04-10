@@ -45,7 +45,7 @@ export default function RefundPolicy() {
               <section>
                 <h2 className="text-2xl font-bold text-primary mb-4">4. Refund Process</h2>
                 <ol className="list-decimal pl-6 space-y-2 text-muted-foreground">
-                  <li>Contact our support team via WhatsApp at +91-8889199933 or email support@myfinvision.com</li>
+                  <li>Contact our support team via WhatsApp at +91-8889199977 or email support@myfinvision.com</li>
                   <li>Provide your enrollment details, payment UTR number, and reason for refund</li>
                   <li>Our team will review your request within 3-5 business days</li>
                   <li>If approved, the refund will be processed to your original payment method within 7-10 business days</li>

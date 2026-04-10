@@ -249,7 +249,7 @@ const PurchaseDialog = ({
 ✅ Verification requested via WhatsApp.`;
 
         const encodedMessage = encodeURIComponent(adminMessage);
-        const adminWhatsappNumber = '8889199933';
+        const adminWhatsappNumber = '8889199977';
         const url = `https://wa.me/${adminWhatsappNumber}?text=${encodedMessage}`;
 
         setTimeout(() => {

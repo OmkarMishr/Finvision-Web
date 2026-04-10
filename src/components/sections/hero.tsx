@@ -82,7 +82,7 @@ const Hero = () => {
 _Submitted on: ${new Date().toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' })}_`;
 
       const encodedMessage = encodeURIComponent(message);
-      const whatsappNumber = '918889199933';
+      const whatsappNumber = '918889199977';
       const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
       
       setTimeout(() => {

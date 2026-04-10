@@ -1,3 +1,21 @@
+// Polyfill Node.js 25's broken localStorage global.
+// Node 25 exposes localStorage but getItem/setItem aren't functions unless
+// --localstorage-file is configured, breaking SSR for many libraries.
+if (
+  typeof globalThis.localStorage !== "undefined" &&
+  typeof globalThis.localStorage.getItem !== "function"
+) {
+  const store: Record<string, string> = {};
+  (globalThis as any).localStorage = {
+    getItem: (key: string) => store[key] ?? null,
+    setItem: (key: string, val: string) => { store[key] = String(val); },
+    removeItem: (key: string) => { delete store[key]; },
+    clear: () => { Object.keys(store).forEach((k) => delete store[k]); },
+    get length() { return Object.keys(store).length; },
+    key: (i: number) => Object.keys(store)[i] ?? null,
+  };
+}
+
 import type { NextConfig } from "next";
 import path from "node:path";
 import withPWA from 'next-pwa';

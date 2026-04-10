@@ -9,16 +9,18 @@ export function DisclaimerPopup() {
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
-    const hasSeenDisclaimer = localStorage.getItem('hasSeenDisclaimer');
-    if (!hasSeenDisclaimer) {
-      const timer = setTimeout(() => setIsOpen(true), 1500);
-      return () => clearTimeout(timer);
-    }
+    try {
+      const hasSeenDisclaimer = window.localStorage.getItem('hasSeenDisclaimer');
+      if (!hasSeenDisclaimer) {
+        const timer = setTimeout(() => setIsOpen(true), 1500);
+        return () => clearTimeout(timer);
+      }
+    } catch {}
   }, []);
 
   const handleClose = () => {
     setIsOpen(false);
-    localStorage.setItem('hasSeenDisclaimer', 'true');
+    try { window.localStorage.setItem('hasSeenDisclaimer', 'true'); } catch {}
   };
 
   return (

@@ -17,7 +17,7 @@ export function IntroVideo() {
       const timer = setTimeout(() => {
         setAnimationComplete(true);
         setTimeout(() => {
-          sessionStorage.setItem("finvision-intro-seen", "true");
+          try { window.sessionStorage.setItem("finvision-intro-seen", "true"); } catch {}
           setShowIntro(false);
         }, 500);
       }, 4000);
@@ -26,7 +26,7 @@ export function IntroVideo() {
   }, [showIntro]);
 
   const handleSkip = () => {
-    sessionStorage.setItem("finvision-intro-seen", "true");
+    try { window.sessionStorage.setItem("finvision-intro-seen", "true"); } catch {}
     setShowIntro(false);
   };
 

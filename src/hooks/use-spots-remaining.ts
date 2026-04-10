@@ -6,12 +6,21 @@ const INITIAL_SPOTS = 23;
 const MIN_SPOTS = 18;
 const STORAGE_KEY = "tti_spots_remaining";
 
+function canUseStorage() {
+  try {
+    return typeof window !== 'undefined' && typeof window.localStorage?.getItem === 'function';
+  } catch {
+    return false;
+  }
+}
+
 export function useSpotsRemaining() {
   const [spotsLeft, setSpotsLeft] = useState<number>(INITIAL_SPOTS);
 
   // Load from localStorage on mount
   useEffect(() => {
-    const stored = localStorage.getItem(STORAGE_KEY);
+    if (!canUseStorage()) return;
+    const stored = window.localStorage.getItem(STORAGE_KEY);
     if (stored) {
       const parsed = parseInt(stored, 10);
       if (!isNaN(parsed) && parsed >= MIN_SPOTS && parsed <= INITIAL_SPOTS) {
@@ -22,7 +31,8 @@ export function useSpotsRemaining() {
 
   // Save to localStorage whenever it changes
   useEffect(() => {
-    localStorage.setItem(STORAGE_KEY, spotsLeft.toString());
+    if (!canUseStorage()) return;
+    window.localStorage.setItem(STORAGE_KEY, spotsLeft.toString());
   }, [spotsLeft]);
 
   const decrementSpots = () => {
@@ -31,7 +41,7 @@ export function useSpotsRemaining() {
 
   const resetSpots = () => {
     setSpotsLeft(INITIAL_SPOTS);
-    localStorage.setItem(STORAGE_KEY, INITIAL_SPOTS.toString());
+    if (canUseStorage()) window.localStorage.setItem(STORAGE_KEY, INITIAL_SPOTS.toString());
   };
 
   return {

@@ -51,7 +51,7 @@ const Footer = () => {
       <TradingGame />
 
       <a
-        href="https://wa.me/918889199933"
+        href="https://wa.me/918889199977"
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Chat with us on WhatsApp"

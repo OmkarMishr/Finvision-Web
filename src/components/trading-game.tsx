@@ -32,8 +32,10 @@ export const TradingGame = () => {
   const frameCount = useRef(0);
 
   useEffect(() => {
-    const saved = localStorage.getItem('bull-run-high-score');
-    if (saved) setHighScore(parseInt(saved));
+    try {
+      const saved = window.localStorage.getItem('bull-run-high-score');
+      if (saved) setHighScore(parseInt(saved));
+    } catch {}
   }, []);
 
   const startGame = () => {
@@ -116,7 +118,7 @@ export const TradingGame = () => {
           setGameState('crashed');
           if (score > highScore) {
             setHighScore(score);
-            localStorage.setItem('bull-run-high-score', score.toString());
+            try { window.localStorage.setItem('bull-run-high-score', score.toString()); } catch {}
           }
           return;
         }
